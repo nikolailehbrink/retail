@@ -1,4 +1,4 @@
-# Welcome to Retail!
+# Welcome to ReTail!
 
 This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com) and was built on top of `npx create-remix@latest --template remix-run/remix/templates/vite` found on [https://remix.run/docs/en/main/future/vite](https://remix.run/docs/en/main/future/vite).
 
