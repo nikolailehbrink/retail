@@ -1,6 +1,10 @@
-# Welcome to Remix + Vite!
+# Welcome to Retail!
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com).
+
+📖 See the [Remix docs](https://remix.run/docs), the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) and the [Tailwind CSS documentation](https://tailwindcss.com/docs/installation) for details on supported features.
+
+This template also includes automatic class sorting for Tailwind CSS classes with the prettier plugin [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
 
 ## Development
 
