@@ -4,7 +4,7 @@ This template is a starting point for building a [Remix](https://remix.run) app 
 
 📖 See the [Remix docs](https://remix.run/docs), the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) and the [Tailwind CSS docs](https://tailwindcss.com/docs/installation) for details on supported features.
 
-This template also includes automatic wrapping for long class names with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames) and automatic class sorting for Tailwind CSS with the prettier plugin [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
+This template enables automatic wrapping for long class names and class sorting with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames) and [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
 
 ## Development
 
