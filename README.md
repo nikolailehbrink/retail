@@ -1,10 +1,10 @@
 # Welcome to ReTail!
 
-This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com) and was built on top of `npx create-remix@latest --template remix-run/remix/templates/vite` found on [https://remix.run/docs/en/main/future/vite](https://remix.run/docs/en/main/future/vite).
+This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com) and was built on top of `npx create-remix@latest` found on [https://remix.run/docs/en/main/guides/vite](https://remix.run/docs/en/main/guides/vite).
 
 📖 See the [Remix docs](https://remix.run/docs), the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) and the [Tailwind CSS docs](https://tailwindcss.com/docs/installation) for details on supported features.
 
-This template also includes automatic class sorting for Tailwind CSS with the prettier plugin [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
+This template also includes automatic wrapping for long class names with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames) and automatic class sorting for Tailwind CSS with the prettier plugin [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
 
 ## Development
 
