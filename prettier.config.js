@@ -6,8 +6,8 @@ const config = {
   endingPosition: "absolute-with-indent",
   plugins: [
     // https://www.nikolailehbr.ink/blog/tailwind-css-tips#Automatic-wrapping-of-long-class-names
-    "prettier-plugin-classnames",
     "prettier-plugin-tailwindcss",
+    "prettier-plugin-classnames",
     "prettier-plugin-merge",
   ],
   semi: true,
