@@ -6,6 +6,8 @@ This template is a starting point for building a [Remix](https://remix.run) app 
 
 This template enables automatic wrapping for long class names and class sorting with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames) and [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
 
+To give you a better starting experience, it also adds the [Inter](https://fonts.google.com/specimen/Inter) font as a preloaded local font with [Fontsource](https://fontsource.org/).
+
 ## Development
 
 Run the Vite dev server:
@@ -38,7 +40,3 @@ Make sure to deploy the output of `npm run build`
 
 - `build/server`
 - `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
