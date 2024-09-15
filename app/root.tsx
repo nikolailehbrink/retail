@@ -5,8 +5,23 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import type { LinksFunction } from "@remix-run/node";
+
+import "@fontsource-variable/inter";
+// https://fontsource.org/docs/getting-started/preload
+import interWoff2 from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 
 import "./tailwind.css";
+
+export const links: LinksFunction = () => [
+  {
+    rel: "preload",
+    as: "font",
+    href: interWoff2,
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
