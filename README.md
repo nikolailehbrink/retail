@@ -1,12 +1,21 @@
 # Welcome to ReTail!
 
-This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com) and was built on top of `npx create-remix@latest` found on [https://remix.run/docs/en/main/guides/vite](https://remix.run/docs/en/main/guides/vite).
+<a href="https://www.secretmessag.es">
+  <img alt="ReTail project image" src="https://github.com/user-attachments/assets/faa11cde-3eec-4bb9-b140-e369d8639bd4">
+</a>
 
-📖 See the [Remix docs](https://remix.run/docs), the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) and the [Tailwind CSS docs](https://tailwindcss.com/docs/installation) for details on supported features.
+This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com) and was built on top of `npx create-remix@latest` which you will find on [https://remix.run/docs/en/main/guides/vite](https://remix.run/docs/en/main/guides/vite).
 
-This template enables automatic wrapping for long class names and class sorting with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames) and [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
+See the [Remix Vite docs](https://remix.run/docs/en/main/future/vite), the [Vite docs](https://vitejs.dev/guide/) and the [Tailwind CSS docs](https://tailwindcss.com/docs/installation) for details on supported features.
 
-To give you a better starting experience, it also adds the [Inter](https://fonts.google.com/specimen/Inter) font as a preloaded local font with [Fontsource](https://fontsource.org/).
+## Features
+
+- **Remix with Vite**: The latest version of Remix with Vite as the build tool. That means, instant server start, fast HMR, and optimized builds for your full-stack app.
+- **Tailwind CSS 4.0**: The alpha release of Tailwind CSS 4.0, which is up to 10x faster, has Zero-configuration content detection, CSS-first configuration, and more.
+- **Automatic wrapping of long class names**: This template enables automatic wrapping for long class names with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames).
+- **Automatic class sorting**: This template enables automatic class sorting with [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
+- **Font optimization**: Preloaded local fonts with [Fontsource](https://fontsource.org/).
+- **Format script**: Format all your files with `npm run format`.
 
 ## Development
 
