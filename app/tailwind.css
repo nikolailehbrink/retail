@@ -1,7 +1,10 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-family-sans: "Inter Variable", sans-serif;
+html,
+body {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
 }
-
-@variant dark (&:where(.dark, .dark *));

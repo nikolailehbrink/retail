@@ -11,7 +11,7 @@ See the [Remix Vite docs](https://remix.run/docs/en/main/future/vite), the [Vite
 ## Features
 
 - **Remix with Vite**: The latest version of Remix with Vite as the build tool. That means, instant server start, fast HMR, and optimized builds for your full-stack app.
-- **Tailwind CSS 4.0**: The alpha release of Tailwind CSS 4.0, which is up to 10x faster, has Zero-configuration content detection, CSS-first configuration, and more.
+- **Tailwind CSS**: Build your UI faster with the utility-first CSS framework.
 - **Automatic wrapping of long class names**: This template enables automatic wrapping for long class names with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames).
 - **Automatic class sorting**: This template enables automatic class sorting with [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
 - **Font optimization**: Preloaded local fonts with [Fontsource](https://fontsource.org/).

@@ -86,7 +86,7 @@ export default function Index() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Tailwind CSS 4.0
+          Tailwind CSS
         </a>
       </p>
       <div className="my-4 flex flex-wrap justify-center gap-2 sm:my-8">
@@ -194,9 +194,9 @@ const features = [
     description: "Ensures type safety throughout, even in configuration files.",
   },
   {
-    title: "Tailwind CSS 4.0",
+    title: "Tailwind CSS",
     description:
-      "The latest version of the utility-first CSS framework with CSS-first configuration.",
+      "The latest version of the utility-first CSS framework.",
   },
   {
     title: "Vite",
