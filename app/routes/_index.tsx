@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 
 export const meta: MetaFunction = () => {
   return [
@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Remix starter template that makes starting a new full-stack app a breeze.",
+        "React-Router 7 starter template that makes starting a new full-stack app a breeze.",
     },
   ];
 };
@@ -195,8 +195,7 @@ const features = [
   },
   {
     title: "Tailwind CSS",
-    description:
-      "The latest version of the utility-first CSS framework.",
+    description: "The latest version of the utility-first CSS framework.",
   },
   {
     title: "Vite",
