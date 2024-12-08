@@ -15,6 +15,9 @@ A refined Remix starter template with improved defaults for building full-stack 
 </p>
 <br/>
 
+> [!TIP]
+> If you want to try out this template with Tailwind CSS v4.0 Beta, you can do so by switching to the [`tailwind-v4` branch](https://github.com/nikolailehbrink/retail/tree/tailwind-v4) .
+
 ## Why
 
 When I first started using the [official Remix template with Vite](https://github.com/remix-run/remix/tree/main/templates/remix), it lacked built-in support for Tailwind CSS. Setting up a new project meant repeatedly installing and configuring it manually. To streamline this process, I created my own starter template: **ReTail** (Remix + Tailwind).
