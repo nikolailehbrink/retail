@@ -1,12 +1,25 @@
-# Welcome to ReTail!
-
-<a href="https://www.secretmessag.es">
-  <img alt="ReTail project image" src="https://github.com/user-attachments/assets/faa11cde-3eec-4bb9-b140-e369d8639bd4">
+<a href="https://retail.nikolailehbr.ink/">
+  <img alt="ReTail project image" src="https://github.com/user-attachments/assets/8ef8b5dd-0d1b-4d26-b19a-5e651cd0f51e">
+  <h1 align="center">ReTail</h1>
 </a>
 
-This template is a starting point for building a [Remix](https://remix.run) app with [Vite](https://vitejs.dev) and [Tailwind CSS](https://tailwindcss.com) and was built on top of `npx create-remix@latest` which you will find on [https://remix.run/docs/en/main/guides/vite](https://remix.run/docs/en/main/guides/vite).
+<p align="center">
+A refined Remix starter template with improved defaults for building full-stack web applications.
+</p>
 
-See the [Remix Vite docs](https://remix.run/docs/en/main/future/vite), the [Vite docs](https://vitejs.dev/guide/) and the [Tailwind CSS docs](https://tailwindcss.com/docs/installation) for details on supported features.
+<p align="center">
+  <a href="#why"><strong>Why</strong></a> ·
+  <a href="#features"><strong>Features</strong></a> ·
+  <a href="#development"><strong>Development</strong></a> ·
+  <a href="#deployment"><strong>Deployment</strong></a>
+</p>
+<br/>
+
+## Why
+
+When I first started using the [official Remix template with Vite](https://github.com/remix-run/remix/tree/main/templates/remix), it lacked built-in support for Tailwind CSS. Setting up a new project meant repeatedly installing and configuring it manually. To streamline this process, I created my own starter template: **ReTail** (Remix + Tailwind).
+
+Since then, the official Remix template has added Tailwind CSS support. However, I continue to use ReTail to define better defaults, include ESLint 9, and integrate helpful utilities that make working with Tailwind CSS and other packages more efficient.
 
 ## Features
 
@@ -16,6 +29,7 @@ See the [Remix Vite docs](https://remix.run/docs/en/main/future/vite), the [Vite
 - **Automatic class sorting**: This template enables automatic class sorting with [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
 - **Font optimization**: Preloaded local fonts with [Fontsource](https://fontsource.org/).
 - **Format script**: Format all your files with `npm run format`.
+- **ESLint Inspector**: Ensure consistent code with ESLint 9 and the [ESLint Config Inspector](https://eslint.org/blog/2024/04/eslint-config-inspector/).
 
 ## Development
 
@@ -24,6 +38,8 @@ Run the Vite dev server:
 ```shellscript
 npm run dev
 ```
+
+This will automatically open the app in your default browser and expose the host IP to your network, enabling better testing on devices like smartphones.
 
 ## Deployment
 
@@ -40,12 +56,3 @@ npm start
 ```
 
 Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`

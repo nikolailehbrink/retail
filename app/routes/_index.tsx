@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Remix starter template that makes starting a new full-stack app a breeze.",
+        "A refined Remix starter template with improved defaults for building full-stack web applications.",
     },
   ];
 };
@@ -47,7 +47,8 @@ export default function Index() {
         </h1>
       </div>
       <p className="max-w-2xl text-center sm:text-xl">
-        A quick starter template for building full-stack web applications with{" "}
+        A refined starter template with improved defaults for building
+        full-stack web applications with{" "}
         <a
           href="https://remix.run/"
           className="border-b-2 border-neutral-400 text-neutral-300
@@ -202,8 +203,9 @@ const features = [
       "Next-gen frontend tooling that's highly extensible via plugins.",
   },
   {
-    title: "ESLint",
-    description: "Configurable linting utility to ensure code consistency.",
+    title: "ESLint 9 with Rule Inspector",
+    description:
+      "Ensure consistent code with ESLint 9 and the <a href='https://eslint.org/blog/2024/04/eslint-config-inspector/'>ESLint Config Inspector</a> with <code>npm run lint:inspect</code>.",
   },
   {
     title: "Automatic class name wrapping",
@@ -221,7 +223,7 @@ const features = [
       "Automatically formats files with a single <code>npm run format</code> command.",
   },
   {
-    title: "Fonts",
+    title: "Optimized Fonts",
     description:
       "Efficient font loading with <code>Fontsource</code> and optimized preloading.",
   },
