@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
     {
       name: "description",
       content:
-        "Remix starter template that makes starting a new full-stack app a breeze.",
+        "A refined Remix starter template with improved defaults for building full-stack web applications.",
     },
   ];
 };
