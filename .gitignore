@@ -1,7 +1,8 @@
-node_modules
+.DS_Store
+/node_modules/
 
-/.cache
-/build
 .env
 
-.vercel
+# React Router
+/.react-router/
+/build/

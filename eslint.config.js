@@ -1,62 +1,40 @@
+import path from "path";
+import reactPlugin from "eslint-plugin-react";
+import { includeIgnoreFile } from "@eslint/compat";
+import globals from "globals";
+import pluginReactHooks from "eslint-plugin-react-hooks";
+
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
-import react from "eslint-plugin-react";
-import jsxA11y from "eslint-plugin-jsx-a11y";
-import globals from "globals";
-import importX from "eslint-plugin-import-x";
-import reactHooks from "eslint-plugin-react-hooks";
+
+const gitignorePath = path.resolve(import.meta.dirname, ".gitignore");
 
 export default tseslint.config(
+  includeIgnoreFile(gitignorePath),
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
   {
-    name: "custom/ignores",
-    ignores: ["!**/.server", "!**/.client"],
-  },
-  {
-    name: "eslint/recommended",
-    ...eslint.configs.recommended,
-  },
-  importX.flatConfigs.recommended,
-  {
-    name: "import-x/typescript",
-    ...importX.flatConfigs.typescript,
-  },
-  jsxA11y.flatConfigs.recommended,
-  {
-    name: "react/recommended",
-    ...react.configs.flat.recommended,
-  },
-  {
-    name: "react/jsx-runtime",
-    ...react.configs.flat["jsx-runtime"],
-  },
-  {
-    name: "custom/project",
-    files: ["**/*.{js,jsx,ts,tsx}"],
-    plugins: {
-      "react-hooks": reactHooks,
-    },
-    rules: {
-      ...reactHooks.configs.recommended.rules,
-    },
     languageOptions: {
-      ecmaVersion: "latest",
       globals: {
         ...globals.browser,
+        ...globals.node,
       },
     },
     settings: {
       react: {
         version: "detect",
       },
-      formComponents: ["Form"],
-      linkComponents: [
-        { name: "Link", linkAttribute: "to" },
-        { name: "NavLink", linkAttribute: "to" },
-      ],
-      "import/resolver": {
-        typescript: {},
-      },
     },
   },
-  ...tseslint.configs.recommended,
+  reactPlugin.configs.flat.recommended, // This is not a plugin object, but a shareable config object
+  reactPlugin.configs.flat["jsx-runtime"],
+  {
+    plugins: {
+      "react-hooks": pluginReactHooks,
+    },
+    rules: {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+    },
+  },
 );

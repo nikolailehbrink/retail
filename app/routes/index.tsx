@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,8 +16,7 @@ export default function Index() {
   return (
     <div
       className="container mx-auto flex min-h-dvh flex-col items-center
-        justify-center gap-8 overflow-x-hidden px-4 pb-8 pt-16 text-neutral-400
-        sm:pt-8"
+        justify-center gap-8 overflow-x-hidden px-4 pt-16 pb-8"
     >
       <div className="relative">
         <div
@@ -25,21 +24,20 @@ export default function Index() {
             blur-3xl"
         ></div>
         <h1
-          className="bg-gradient-to-br from-neutral-200 to-neutral-400
-            bg-clip-text text-center text-4xl font-bold leading-tight
+          className="bg-linear-to-br from-neutral-200 to-neutral-400
+            bg-clip-text text-center text-4xl leading-tight font-bold
             tracking-tight text-transparent sm:text-5xl lg:text-6xl"
         >
           Build full-stack apps <br /> faster with{" "}
           <span className="relative text-[105%]">
             <span
-              className="absolute -z-10 bg-gradient-to-br from-sky-300
-                via-sky-500 to-sky-700 bg-clip-text text-transparent opacity-40
-                blur-md"
+              className="absolute -z-10 bg-linear-to-br from-sky-300 via-sky-500
+                to-sky-700 bg-clip-text text-transparent opacity-40 blur-md"
             >
               ReTail
             </span>
             <span
-              className="bg-gradient-to-br from-sky-300 via-sky-500 to-sky-700
+              className="bg-linear-to-br from-sky-300 via-sky-500 to-sky-700
                 bg-clip-text text-transparent"
             >
               ReTail
@@ -140,23 +138,23 @@ export default function Index() {
         </a>
       </div>
       <div
-        className="-mx-4 max-w-5xl columns-1 text-balance rounded-3xl border
-          border-neutral-800 bg-gradient-to-br from-neutral-900/50
-          via-neutral-900/25 to-neutral-800/75 p-4 max-sm:rounded-b-none
-          sm:columns-2 lg:columns-3"
+        className="-mx-4 max-w-5xl columns-1 rounded-3xl border
+          border-neutral-800 bg-linear-to-br from-neutral-900/50
+          via-neutral-900/25 to-neutral-800/75 p-4 text-balance
+          max-sm:rounded-b-none sm:columns-2 lg:columns-3"
       >
         {features.map(({ title, description }) => (
           <div
             key={title}
             className="mt-4 break-inside-avoid rounded-2xl border
-              border-neutral-800 bg-gradient-to-br from-neutral-900/50
-              to-neutral-800/50 p-2 first:mt-0"
+              border-neutral-800 bg-linear-to-br from-neutral-900/50
+              to-neutral-800/50 p-2 transform-3d first:mt-0"
           >
             <div
               className="h-full rounded-xl border-2 border-neutral-800
                 bg-neutral-950 p-4"
             >
-              <h2 className="text font-bold leading-snug text-neutral-200">
+              <h2 className="text leading-snug font-bold text-neutral-200">
                 {title}
               </h2>
               <p
@@ -187,7 +185,7 @@ export default function Index() {
 
 const features = [
   {
-    title: "Remix",
+    title: "React Router 7",
     description: "A full-stack web framework focused on modern web standards.",
   },
   {
@@ -195,11 +193,11 @@ const features = [
     description: "Ensures type safety throughout, even in configuration files.",
   },
   {
-    title: "Tailwind CSS",
+    title: "Tailwind CSS 4",
     description: "The latest version of the utility-first CSS framework.",
   },
   {
-    title: "Vite",
+    title: "Vite 6",
     description:
       "Next-gen frontend tooling that's highly extensible via plugins.",
   },

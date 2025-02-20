@@ -1,10 +1,10 @@
 <a href="https://retail.nikolailehbr.ink/">
-  <img alt="ReTail project image" src="https://github.com/user-attachments/assets/8ef8b5dd-0d1b-4d26-b19a-5e651cd0f51e">
+  <img alt="ReTail website screenshot" src="./public/assets/screenshot.png">
   <h1 align="center">ReTail</h1>
 </a>
 
 <p align="center">
-A refined Remix starter template with improved defaults for building full-stack web applications.
+A refined React Router starter template with improved defaults for building full-stack web applications.
 </p>
 
 <p align="center">
@@ -15,47 +15,62 @@ A refined Remix starter template with improved defaults for building full-stack 
 </p>
 <br/>
 
-> [!TIP]
-> If you want to try out this template with Tailwind CSS v4.0 Beta, you can do so by switching to the [`tailwind-v4` branch](https://github.com/nikolailehbrink/retail/tree/tailwind-v4) .
-
 ## Why
 
-When I first started using the [official Remix template with Vite](https://github.com/remix-run/remix/tree/main/templates/remix), it lacked built-in support for Tailwind CSS. Setting up a new project meant repeatedly installing and configuring it manually. To streamline this process, I created my own starter template: **ReTail** (Remix + Tailwind).
+When I first started using `Remix`, the predecessor to `React Router 7`, I worked with the [official `Remix` template with `Vite`](https://github.com/remix-run/remix/tree/main/templates/remix). However, it lacked built-in support for `Tailwind CSS`, requiring me to manually install and configure it for every new project. To simplify this setup, I created my own starter template: **ReTail** (`Remix`/`React Router` + `Tailwind CSS`).
 
-Since then, the official Remix template has added Tailwind CSS support. However, I continue to use ReTail to define better defaults, include ESLint 9, and integrate helpful utilities that make working with Tailwind CSS and other packages more efficient.
+Since then, the official `Remix` template has added `Tailwind CSS` support, and `React Router 7` has been released. Despite these updates, I continue to maintain ReTail because I think it provides better defaults, includes `ESLint 9`, and integrates useful utilities that improve the development experience with `Tailwind CSS` and other tools.
 
 ## Features
 
-- **Remix with Vite**: The latest version of Remix with Vite as the build tool. That means, instant server start, fast HMR, and optimized builds for your full-stack app.
-- **Tailwind CSS**: Build your UI faster with the utility-first CSS framework.
-- **Automatic wrapping of long class names**: This template enables automatic wrapping for long class names with [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames).
-- **Automatic class sorting**: This template enables automatic class sorting with [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
-- **Font optimization**: Preloaded local fonts with [Fontsource](https://fontsource.org/).
-- **Format script**: Format all your files with `npm run format`.
-- **ESLint Inspector**: Ensure consistent code with ESLint 9 and the [ESLint Config Inspector](https://eslint.org/blog/2024/04/eslint-config-inspector/).
+- **React Router 7** – The latest version of React Router, paired with Vite for instant server start, fast HMR, and optimized full-stack builds.
+- **Tailwind CSS 4** – Build UIs faster with the utility-first CSS framework and its new CSS-first configuration.
+- **Vite 6** – A lightning-fast frontend build tool that delivers instant code serving and optimized bundling.
+- **Automatic class name wrapping** – Keeps long class names readable using [`prettier-plugin-classnames`](https://www.npmjs.com/package/prettier-plugin-classnames).
+- **Automatic class sorting** – Ensures consistent class order with [`prettier-plugin-tailwindcss`](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier).
+- **Font optimization** – Preloads local fonts efficiently with [Fontsource](https://fontsource.org/).
+- **ESLint 9** – Maintains code quality with ESLint and the [ESLint Config Inspector](https://eslint.org/blog/2024/04/eslint-config-inspector/).
+
+## Helpful Scripts
+
+> [!TIP]
+> Use any package manager you prefer, such as `npm` or `yarn`, instead of `pnpm`.
+
+- **`pnpm format`**: Format all your files with Prettier.
+- **`pnpm lint`**: Lint your code with ESLint.
+- **`pnpm lint:inspect`**: Inspect your ESLint configuration with the ESLint Config Inspector.
+- **`pnpm start`**: Run the app locally in production mode.
+- **`pnpm typecheck`**: Generate TypeScript types for your app.
+- **`pnpm clean`**: Remove the `node_modules` directory.
 
 ## Development
+
+> [!TIP]
+> Use any package manager you prefer, such as `npm` or `yarn`, instead of `pnpm`.
 
 Run the Vite dev server:
 
 ```shellscript
-npm run dev
+pnpm dev
 ```
 
 This will automatically open the app in your default browser and expose the host IP to your network, enabling better testing on devices like smartphones.
 
 ## Deployment
 
+> [!TIP]
+> Use any package manager you prefer, such as `npm` or `yarn`, instead of `pnpm`.
+
 First, build your app for production:
 
 ```sh
-npm run build
+pnpm build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+pnpm start
 ```
 
 Now you'll need to pick a host to deploy it to.
