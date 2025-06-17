@@ -17,8 +17,18 @@ import "./app.css";
 // Supports weights 100-900
 import "@fontsource-variable/inter";
 
+// Preload only the normal weight of Inter Latin
+import interWoff2 from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
+
 export const links: LinksFunction = () => {
   return [
+    {
+      rel: "preload",
+      href: interWoff2,
+      as: "font",
+      type: "font/woff2",
+      crossOrigin: "anonymous",
+    },
     { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
     {
       rel: "apple-touch-icon",
