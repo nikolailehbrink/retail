@@ -3,6 +3,7 @@ import reactPlugin from "eslint-plugin-react";
 import { includeIgnoreFile } from "@eslint/compat";
 import globals from "globals";
 import pluginReactHooks from "eslint-plugin-react-hooks";
+import jsxA11y from "eslint-plugin-jsx-a11y";
 
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
@@ -12,6 +13,7 @@ const gitignorePath = path.resolve(import.meta.dirname, ".gitignore");
 export default tseslint.config(
   includeIgnoreFile(gitignorePath),
   eslint.configs.recommended,
+  jsxA11y.flatConfigs.recommended,
   tseslint.configs.recommended,
   {
     languageOptions: {
