@@ -1,16 +1,29 @@
 {
+  "name": "retail",
+  "version": "1.0.0",
   "private": true,
+  "description": "Refined starter template for building full-stack web applications using React Router 7, TypeScript, Tailwind CSS, Prettier and ESLint.",
+  "homepage": "https://retail.nikolailehbr.ink/",
+  "bugs": {
+    "url": "https://github.com/nikolailehbrink/retail/issues",
+    "email": "mail@nikolailehbr.ink"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolailehbrink/retail.git"
+  },
+  "author": "Nikolai Lehbrink <mail@nikolailehbr.ink> (https://www.nikolailehbr.ink/)",
   "type": "module",
   "scripts": {
     "build": "react-router build",
+    "check:unused": "knip",
+    "clean": "rm -rf node_modules",
     "dev": "react-router dev",
     "format": "prettier --write .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:inspect": "eslint --inspect-config",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
-    "clean": "rm -rf node_modules",
-    "check:unused": "knip"
+    "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.6",
