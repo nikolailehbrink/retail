@@ -1,4 +1,4 @@
-import type { MetaFunction } from "react-router";
+import { Link, type MetaFunction } from "react-router";
 
 export const meta: MetaFunction = () => {
   return [
@@ -48,49 +48,49 @@ export default function Index() {
       <p className="max-w-2xl text-center sm:text-xl">
         A refined starter template with improved defaults for building
         full-stack web applications with{" "}
-        <a
-          href="https://remix.run/"
+        <Link
+          to="https://remix.run/"
           className="border-b-2 border-neutral-400 text-neutral-300
             hover:border-neutral-200"
           target="_blank"
           rel="noopener noreferrer"
         >
           Remix
-        </a>
+        </Link>
         ,{" "}
-        <a
-          href="https://vitejs.dev"
+        <Link
+          to="https://vitejs.dev"
           className="border-b-2 border-neutral-400 text-neutral-300
             hover:border-neutral-200"
           target="_blank"
           rel="noopener noreferrer"
         >
           Vite
-        </a>
+        </Link>
         ,{" "}
-        <a
-          href="https://www.typescriptlang.org/"
+        <Link
+          to="https://www.typescriptlang.org/"
           className="border-b-2 border-neutral-400 text-neutral-300
             hover:border-neutral-200"
           target="_blank"
           rel="noopener noreferrer"
         >
           TypeScript
-        </a>{" "}
+        </Link>{" "}
         and{" "}
-        <a
-          href="https://tailwindcss.com"
+        <Link
+          to="https://tailwindcss.com"
           className="border-b-2 border-neutral-400 text-neutral-300
             hover:border-neutral-200"
           target="_blank"
           rel="noopener noreferrer"
         >
           Tailwind CSS
-        </a>
+        </Link>
       </p>
       <div className="my-4 flex flex-wrap justify-center gap-2 sm:my-8">
-        <a
-          href="https://github.com/nikolailehbrink/retail"
+        <Link
+          to="https://github.com/nikolailehbrink/retail"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 rounded-lg border-2
@@ -112,9 +112,9 @@ export default function Index() {
             ></path>
             <path d="M231.65,194.55,198.46,36.75a16,16,0,0,0-19-12.39L132.65,34.42a16.08,16.08,0,0,0-12.3,19l33.19,157.8A16,16,0,0,0,169.16,224a16.25,16.25,0,0,0,3.38-.36l46.81-10.06A16.09,16.09,0,0,0,231.65,194.55ZM136,50.15c0-.06,0-.09,0-.09l46.8-10,3.33,15.87L139.33,66Zm6.62,31.47,46.82-10.05,3.34,15.9L146,97.53Zm6.64,31.57,46.82-10.06,13.3,63.24-46.82,10.06ZM216,197.94l-46.8,10-3.33-15.87L212.67,182,216,197.85C216,197.91,216,197.94,216,197.94ZM104,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V48A16,16,0,0,0,104,32ZM56,48h48V64H56Zm0,32h48v96H56Zm48,128H56V192h48v16Z"></path>
           </svg>
-        </a>
-        <a
-          href="https://github.com/new?template_name=retail&template_owner=nikolailehbrink"
+        </Link>
+        <Link
+          to="https://github.com/new?template_name=retail&template_owner=nikolailehbrink"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 rounded-lg border-2
@@ -135,7 +135,7 @@ export default function Index() {
             ></path>
             <path d="M208.3,75.68A59.74,59.74,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58,58,0,0,0,208.3,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.76,41.76,0,0,1,200,104Z"></path>
           </svg>
-        </a>
+        </Link>
       </div>
       <div
         className="-mx-4 max-w-5xl columns-1 rounded-3xl border

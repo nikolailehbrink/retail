@@ -24,6 +24,11 @@ export default tseslint.config(
       react: {
         version: "detect",
       },
+      formComponents: ["Form"],
+      linkComponents: [
+        { name: "Link", linkAttribute: "to" },
+        { name: "NavLink", linkAttribute: "to" },
+      ],
     },
   },
   reactPlugin.configs.flat.recommended, // This is not a plugin object, but a shareable config object
