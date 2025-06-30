@@ -4,6 +4,7 @@ const config = {
   tailwindFunctions: functions,
   customFunctions: functions,
   endingPosition: "absolute-with-indent",
+  tailwindStylesheet: "./app/app.css",
   plugins: [
     // https://www.nikolailehbr.ink/blog/tailwind-css-tips#Automatic-wrapping-of-long-class-names
     "prettier-plugin-tailwindcss",
