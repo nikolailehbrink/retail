@@ -179,7 +179,7 @@ const FEATURES = [
   {
     title: "ESLint 9 with Rule Inspector",
     description:
-      "Ensure consistent code with ESLint 9 and the <a href='https://eslint.org/blog/2024/04/eslint-config-inspector/'>ESLint Config Inspector</a> with <code>npm run lint:inspect</code>.",
+      "Ensure consistent code with ESLint 9 and the <a target='_blank' href='https://eslint.org/blog/2024/04/eslint-config-inspector/'>ESLint Config Inspector</a> with <code>npm run lint:inspect</code>.",
   },
   {
     title: "Automatic class name wrapping",
