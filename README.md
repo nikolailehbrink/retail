@@ -28,17 +28,17 @@ Since then, the official `Remix` template has added `Tailwind CSS` support, and 
 - **ESLint 9** – Maintains code quality with ESLint and the [ESLint Config Inspector](https://eslint.org/blog/2024/04/eslint-config-inspector/).
 - **Font optimization** – Preloads local fonts efficiently with [Fontsource](https://fontsource.org/).
 - **React Router 7** – The latest version of React Router, paired with Vite for instant server start, fast HMR, and optimized full-stack builds.
-- **Remove unused code** – Detects and removes unused code with [Knip](https://www.npmjs.com/package/knip).
+- **Remove unused code** – Detect and remove unused code with [Knip](https://www.npmjs.com/package/knip).
 - **Tailwind CSS 4** – Build UIs faster with the utility-first CSS framework and its new CSS-first configuration.
 - **TypeScript** – Provides type safety and autocompletion for a better developer experience.
-- **Vite 6** – A lightning-fast frontend build tool that delivers instant code serving and optimized bundling.
+- **Vite 6** – A pretty fast frontend build tool that delivers instant code serving and optimized bundling.
 
 ## Helpful Scripts
 
 > [!TIP]
 > Use any package manager you prefer, such as `npm` or `yarn`, instead of `pnpm`.
 
-- **`pnpm check:unused`**: Find unused code in your project with Knip.
+- **`pnpm check:unused`**: Find unused code in your project with [Knip](https://www.npmjs.com/package/knip).
 - **`pnpm clean`**: Remove the `node_modules` directory.
 - **`pnpm format`**: Format all your files with Prettier.
 - **`pnpm lint`**: Lint your code with ESLint.

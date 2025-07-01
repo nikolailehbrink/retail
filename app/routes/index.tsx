@@ -93,7 +93,7 @@ export default function Index() {
           Use template
         </Link>
         <Link
-          to="https://github.com/nikolailehbrink/retail"
+          to="https://github.com/nikolailehbrink/retail?tab=readme-ov-file#why"
           target="_blank"
           rel="noopener noreferrer"
           className="relative flex items-center gap-1.5 overflow-clip
