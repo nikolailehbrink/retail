@@ -1,16 +1,3 @@
-import { Link, type MetaFunction } from "react-router";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "ReTail - Build full-stack apps faster" },
-
-    {
-      name: "description",
-      content:
-        "A refined Remix starter template with improved defaults for building full-stack web applications.",
-    },
-  ];
-};
 
 export default function Index() {
   return (

@@ -37,17 +37,10 @@ export const links: LinksFunction = () => {
   ];
 };
 
-export const meta: MetaFunction = ({ error }) => {
-  const title =
-    isRouteErrorResponse(error) && error.status === 404
-      ? "ReTail - Page not found"
-      : "ReTail - Build full-stack apps faster";
-  return [
-    {
-      title,
-    },
-  ];
-};
+export async function loader({ request }: Route.LoaderArgs) {
+  const { origin } = new URL(request.url);
+  return { origin };
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -128,3 +121,70 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     </main>
   );
 }
+
+export const meta: Route.MetaFunction = ({
+  data,
+  error,
+  location: { pathname },
+}) => {
+  if (!data) {
+    return [];
+  }
+  const { origin } = data;
+  const title =
+    isRouteErrorResponse(error) && error.status === 404
+      ? "Page not found | ReTail"
+      : "ReTail - Build full-stack apps faster";
+  const description =
+    "Refined starter template for building full-stack web applications using React Router 7, TypeScript, Tailwind CSS, Prettier and ESLint.";
+  const currentUrl = origin + pathname;
+  const ogImageUrl = `${origin}/assets/screenshot.png`;
+
+  return [
+    {
+      title,
+    },
+    {
+      name: "description",
+      content: description,
+    },
+    {
+      property: "og:title",
+      content: title,
+    },
+    { tagName: "link", rel: "canonical", href: currentUrl },
+    { property: "og:description", content: description },
+    { property: "og:image", content: ogImageUrl },
+    { property: "og:image:alt", content: title },
+    { property: "og:image:type", content: "image/png" },
+    { property: "og:image:width", content: "2400" },
+    { property: "og:image:height", content: "1260" },
+    { property: "og:url", content: currentUrl },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:site_name",
+      content: "ReTail",
+    },
+    {
+      property: "og:locale",
+      content: "en_US",
+    },
+    // Only need these properties, since it automatically uses the og pproperties:
+    // https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
+    {
+      property: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      property: "twitter:site",
+      content: "@nikolailehbrink",
+    },
+    {
+      property: "twitter:creator",
+      content: "@nikolailehbrink",
+    },
+  ];
+};
