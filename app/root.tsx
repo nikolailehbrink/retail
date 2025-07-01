@@ -7,8 +7,6 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  type LinksFunction,
-  type MetaFunction,
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -20,7 +18,7 @@ import "@fontsource-variable/inter";
 // Preload only the normal weight of Inter Latin
 import interWoff2 from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 
-export const links: LinksFunction = () => {
+export const links: Route.LinksFunction = () => {
   return [
     {
       rel: "preload",
