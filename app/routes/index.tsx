@@ -37,23 +37,13 @@ export default function Index() {
         A refined starter template with improved defaults for building
         full-stack web applications with{" "}
         <Link
-          to="https://remix.run/"
+          to="https://reactrouter.com/"
           className="border-b-2 border-neutral-400 text-neutral-300
             hover:border-neutral-200"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Remix
-        </Link>
-        ,{" "}
-        <Link
-          to="https://vitejs.dev"
-          className="border-b-2 border-neutral-400 text-neutral-300
-            hover:border-neutral-200"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite
+          React Router 7
         </Link>
         ,{" "}
         <Link
@@ -134,7 +124,7 @@ export default function Index() {
           bg-neutral-900 p-4 text-balance max-sm:rounded-b-none sm:columns-2
           lg:columns-3"
       >
-        {features.map(({ title, description }) => (
+        {FEATURES.map(({ title, description }) => (
           <div
             key={title}
             className="mt-4 break-inside-avoid rounded-xl first:mt-0"
@@ -173,7 +163,7 @@ export default function Index() {
   );
 }
 
-const features = [
+const FEATURES = [
   {
     title: "React Router 7",
     description: "A full-stack web framework focused on modern web standards.",
@@ -185,11 +175,6 @@ const features = [
   {
     title: "Tailwind CSS 4",
     description: "The latest version of the utility-first CSS framework.",
-  },
-  {
-    title: "Vite 6",
-    description:
-      "Next-gen frontend tooling that's highly extensible via plugins.",
   },
   {
     title: "ESLint 9 with Rule Inspector",
@@ -215,5 +200,10 @@ const features = [
     title: "Optimized Fonts",
     description:
       "Efficient font loading with <code>Fontsource</code> and optimized preloading.",
+  },
+  {
+    title: "Check for unused code",
+    description:
+      "Run <code>npm run check:unused</code> to find unused code with <code>Knip</code>.",
   },
 ];
