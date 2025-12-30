@@ -7,10 +7,11 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
+import { defineConfig } from "eslint/config";
 
 const gitignorePath = path.resolve(import.meta.dirname, ".gitignore");
 
-export default tseslint.config(
+export default defineConfig(
   includeIgnoreFile(gitignorePath),
   eslint.configs.recommended,
   jsxA11y.flatConfigs.recommended,
