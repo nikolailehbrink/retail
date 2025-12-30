@@ -31,7 +31,7 @@ Since then, the official `Remix` template has added `Tailwind CSS` support, and 
 - **Remove unused code** – Detect and remove unused code with [Knip](https://www.npmjs.com/package/knip).
 - **Tailwind CSS 4** – Build UIs faster with the utility-first CSS framework and its new CSS-first configuration.
 - **TypeScript** – Provides type safety and autocompletion for a better developer experience.
-- **Vite 6** – A pretty fast frontend build tool that delivers instant code serving and optimized bundling.
+- **Vite 7** – A fast frontend build tool that delivers instant code serving and optimized bundling.
 
 ## Helpful Scripts
 
