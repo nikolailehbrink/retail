@@ -1,5 +1,6 @@
-/** @type {import("prettier").Config} */
-const functions = ["cn", "clsx"];
+const functions = ["cn", "clsx", "cva"];
+
+/** @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions} */
 const config = {
   tailwindFunctions: functions,
   customFunctions: functions,
