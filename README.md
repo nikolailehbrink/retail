@@ -43,7 +43,7 @@ Since then, the official `Remix` template has added `Tailwind CSS` support, and 
 - **`pnpm format`**: Format all your files with Prettier.
 - **`pnpm lint`**: Lint your code with ESLint.
 - **`pnpm lint:inspect`**: Inspect your ESLint configuration with the ESLint Config Inspector.
-- **`pnpm start`**: Run the app locally in production mode.
+- **`pnpm preview`**: Preview the production build locally.
 - **`pnpm typecheck`**: Generate TypeScript types for your app.
 
 ## Development
@@ -64,10 +64,10 @@ First, build your app for production:
 pnpm build
 ```
 
-Then run the app in production mode:
+Then preview the app in production mode:
 
 ```sh
-pnpm start
+pnpm preview
 ```
 
 Now you'll need to pick a host to deploy it to.

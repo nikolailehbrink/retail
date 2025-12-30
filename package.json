@@ -22,7 +22,7 @@
     "format": "prettier --write .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:inspect": "eslint --inspect-config",
-    "start": "react-router-serve ./build/server/index.js",
+    "preview": "vite preview",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
