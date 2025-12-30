@@ -74,7 +74,7 @@ export default function Index() {
           className="relative flex items-center gap-1.5 overflow-clip
             rounded-s-full border-2 border-e-0 bg-sky-400 px-3 py-2 text-sm
             text-sky-950 inset-shadow-2xs inset-shadow-sky-300 transition-colors
-            before:absolute before:inset-0 before:bg-gradient-to-b
+            before:absolute before:inset-0 before:bg-linear-to-b
             before:from-white/10 before:to-transparent hover:bg-sky-500"
         >
           <svg
@@ -100,7 +100,7 @@ export default function Index() {
             rounded-e-full border-2 border-l-0 border-neutral-900 bg-neutral-900
             px-3 py-2 text-sm text-neutral-100 inset-shadow-2xs
             inset-shadow-neutral-700 transition-colors before:absolute
-            before:inset-0 before:bg-gradient-to-b before:from-white/10
+            before:inset-0 before:bg-linear-to-b before:from-white/10
             before:to-transparent hover:bg-neutral-800"
         >
           <svg
