@@ -1,6 +1,6 @@
 {
   "name": "retail",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Refined starter template for building full-stack web applications using React Router 7, TypeScript, Tailwind CSS, Prettier and ESLint.",
   "homepage": "https://retail.nikolailehbr.ink/",
