@@ -121,14 +121,14 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 }
 
 export const meta: Route.MetaFunction = ({
-  data,
+  loaderData,
   error,
   location: { pathname },
 }) => {
-  if (!data) {
+  if (!loaderData) {
     return [];
   }
-  const { origin } = data;
+  const { origin } = loaderData;
   const title =
     isRouteErrorResponse(error) && error.status === 404
       ? "Page not found | ReTail"
